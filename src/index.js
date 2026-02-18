@@ -13,7 +13,7 @@ const server = http.createServer(app);
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.json({ message: 'Hello from Express on port 8000' });
+  res.json({ message: `Hello from Express on port ${PORT}` });
 });
 
 app.use('/matches', matchRouter);
